@@ -10,6 +10,7 @@ jobs:
     with: 
       path: ./
       key: pom.xml
+      cmd: mvn -f pom.xml clean package
       upload-path: ./poorna.zip
     secrets:
       access-key: ${{ secrets.access_key }}
