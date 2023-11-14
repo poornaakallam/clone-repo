@@ -10,5 +10,9 @@ jobs:
       path: ./
       key: pom.xml
       upload-path: ./poorna.zip
+    secrets:
+      access-key: ${{ secrets.access_key }}
+      secret-key: ${{secrets.secret_key}}
+      
 
       
