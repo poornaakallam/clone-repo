@@ -9,5 +9,6 @@ jobs:
     with: 
       path: ./
       key: pom.xml
+      upload-path: ./src.zip
 
       
