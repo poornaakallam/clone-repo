@@ -7,7 +7,7 @@ jobs:
   build:
     uses: poornaakallam/workflows/.github/workflows/poc.yml@main
     with: 
-      path: ./
+      path: ~/.m2/repository
       key: "Linux-maven-('**/pom.xml')"
       #cmd: mvn -f pom.xml clean package
       #upload-path: ./poorna.zip
