@@ -9,7 +9,7 @@ jobs:
     uses: poornaakallam/workflows/.github/workflows/poc.yml@main
     with: 
       path: ./
-      key: "$OS_NAME-maven-${{hashfiles('**/pom.xml) }}"
+      key: "$OS_NAME-maven-${{hashfiles('**/pom.xml') }}"
       #cmd: mvn -f pom.xml clean package
       #upload-path: ./poorna.zip
     secrets:
