@@ -9,6 +9,9 @@ jobs:
     with: 
       path: ~/.m2/repository
       key: "Linux-maven-('**/pom.xml')"
+  env:
+      RUNNER_OS: ${{runner.os}}
+        
       #cmd: mvn -f pom.xml clean package
       #upload-path: ./poorna.zip
     secrets:
