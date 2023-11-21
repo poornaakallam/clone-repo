@@ -8,7 +8,7 @@ jobs:
     uses: poornaakallam/workflows/.github/workflows/poc.yml@main
     with: 
       path: ~/.m2/repository
-      key: "${env.RUNNER_OS}-maven-$HASH_VALUE('**/pom.xml')"
+      key: "$RUNNER_OS-maven-$HASH_VALUE('**/pom.xml')"
         
       #cmd: mvn -f pom.xml clean package
       #upload-path: ./poorna.zip
